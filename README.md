@@ -44,3 +44,29 @@ I developed a front-end for an email client that interacts with a backend API to
 <ul>
   <li>Implemented a "Reply" button that pre-fills the composition form with the recipient, subject, and body based on the email being replied to.</li>
 </ul>
+Setup Instructions and Running the Code in a Browser
+Download and Setup
+Download the project from this link and unzip it.
+
+Navigate to Project Directory
+cd CS50-project-6-javascript-mail
+Apply Migrations
+Run the following commands to set up the database:
+
+bash
+Copy code
+python manage.py makemigrations mail
+python manage.py migrate
+Start the Web Server
+Run:
+
+bash
+Copy code
+python manage.py runserver
+Open the server in your browser (usually http://127.0.0.1:8000/).
+
+Register an Account
+Register with any email and password (they don’t need to be real).
+
+Using the Email Client
+After logging in, navigate through Inbox, Sent, and Archive using the buttons. Use the "Compose" button to create new emails. All interactions happen dynamically without reloading the page.
